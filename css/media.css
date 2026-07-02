@@ -19,9 +19,8 @@
   }
   .nav-tabs .nav-link {
     font-size: 14px;
-    padding: 8px ;
+    padding: 8px;
     border-radius: 0;
- 
   }
   .nav-tabs .nav-link:hover {
     color: black;
@@ -33,5 +32,11 @@
   }
   .custom-tabs .nav-link i {
     font-size: 16px;
+  }
+  .right-side {
+    padding: 40px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: auto;
   }
 }
