@@ -22,19 +22,21 @@ var meals = [
       "2 cloves garlic, minced",
       "1/2 cup heavy cream",
       "Fresh basil leaves",
-      "1 tablespoon olive oil",
+      "1 tablespoon olive oil"
     ],
     instructions: [
       "Heat olive oil in a pot and sauté minced garlic until fragrant.",
       "Add chopped tomatoes and vegetable broth, bring to a boil, then simmer for 10 minutes.",
       "Use a blender to purée the soup until completely smooth.",
       "Return to heat, stir in the heavy cream, and season with salt and pepper.",
-      "Garnish with fresh basil leaves and serve warm.",
+      "Garnish with fresh basil leaves and serve warm."
     ],
     chef: [
       "For a richer flavor, roast the tomatoes in the oven before boiling",
       "Serves beautifully with a side of crispy grilled cheese bread",
-    ],
+      "Use ripe plum tomatoes for natural sweetness and less acidity",
+      "A tiny pinch of sugar balances the tomato acidity perfectly"
+    ]
   },
   {
     name: "Shrimp Scampi",
@@ -53,36 +55,38 @@ var meals = [
     fat: "18g",
     fiber: "3g",
     sodium: "620mg",
-    ingredients: [
-      "250g linguine pasta",
-      "500g large shrimp, peeled and deveined",
-      "4 tablespoons unsalted butter",
-      "2 tablespoons olive oil",
-      "4 cloves garlic, minced",
-      "1/2 cup chicken broth or white wine",
-      "Juice of 1 lemon",
-      "1/4 teaspoon red pepper flakes",
-      "Fresh parsley, chopped",
-    ],
-    instructions: [
-      "Cook linguine according to package directions. Reserve 1 cup pasta water.",
-      "Heat olive oil and 2 tablespoons butter in a pan. Add garlic and red pepper flakes, cook for 1 minute.",
-      "Add shrimp, cook until pink on both sides, about 3-4 minutes. Remove and set aside.",
-      "Add broth to pan, simmer for 2 minutes. Add remaining butter and lemon juice.",
-      "Return shrimp to pan, add cooked pasta and toss together.",
-      "Garnish with parsley and serve immediately.",
-    ],
+    ingredients: [  
+      "250g linguine pasta",  
+      "500g large shrimp, peeled and deveined",  
+      "4 tablespoons unsalted butter",  
+      "2 tablespoons olive oil",  
+      "4 cloves garlic, minced",  
+      "1/2 cup chicken broth or white wine",  
+      "Juice of 1 lemon",  
+      "1/4 teaspoon red pepper flakes",  
+      "Fresh parsley, chopped"
+    ],  
+    instructions: [  
+      "Cook linguine according to package directions. Reserve 1 cup pasta water.",  
+      "Heat olive oil and 2 tablespoons butter in a pan. Add garlic and red pepper flakes, cook for 1 minute.",  
+      "Add shrimp, cook until pink on both sides, about 3-4 minutes. Remove and set aside.",  
+      "Add broth to pan, simmer for 2 minutes. Add remaining butter and lemon juice.",  
+      "Return shrimp to pan, add cooked pasta and toss together.",  
+      "Garnish with parsley and serve immediately."
+    ],  
     chef: [
       "Don't overcook shrimp - they cook very quickly",
       "Toss pasta in sauce thoroughly for maximum flavor absorption",
-    ],
+      "Use good quality fresh garlic, avoid pre-minced jars",
+      "Add extra lemon zest at the end for a bright, fresh aroma"
+    ]
   },
   {
     name: "Beef Stir-Fry Noodles",
     rate: 4.6,
     reviews: 245,
     prepTime: 20,
-    cookTime: 30,
+    cookTime: 10,
     servings: "2 people",
     image: "images/food3.jfif",
     desc: "Tender beef strips with crunchy vegetables and noodles",
@@ -101,19 +105,21 @@ var meals = [
       "3 tablespoons soy sauce",
       "1 tablespoon honey",
       "1 tablespoon sesame oil",
-      "2 cloves garlic, minced",
+      "2 cloves garlic, minced"
     ],
     instructions: [
       "Cook noodles according to package instructions and set aside.",
       "Whisk soy sauce, honey, and sesame oil in a small bowl.",
       "Heat a large skillet, cook beef slices for 3 minutes until browned, then remove.",
       "Stir-fry bell peppers and garlic in the same pan for 3 minutes.",
-      "Add noodles, beef, and the sauce back into the pan, toss for 1 minute on high heat.",
+      "Add noodles, beef, and the sauce back into the pan, toss for 1 minute on high heat."
     ],
     chef: [
       "Slice the beef against the grain so it stays very tender",
       "Make sure the skillet is completely hot before adding the beef",
-    ],
+      "Prep all ingredients before heating the wok as it cooks very fast",
+      "Rinse noodles with cold water after boiling to prevent sticking"
+    ]
   },
   {
     name: "Healthy Vegetarian Bowl",
@@ -138,17 +144,19 @@ var meals = [
       "1/2 cup shredded carrots",
       "1/2 cup diced cucumbers",
       "A handful of cherry tomatoes",
-      "2 tablespoons tahini dressing",
+      "2 tablespoons tahini dressing"
     ],
     instructions: [
       "Arrange the cooked quinoa at the base of your serving bowl.",
       "Place roasted chickpeas, carrots, cucumbers, and cherry tomatoes in separate sections on top.",
-      "Drizzle the creamy tahini dressing evenly over the entire bowl before serving.",
+      "Drizzle the creamy tahini dressing evenly over the entire bowl before serving."
     ],
     chef: [
       "You can prep all these veggies ahead of time for a quick lunch assembly",
       "Add a squeeze of fresh lemon juice for a bright, tangy finish",
-    ],
+      "Toast the quinoa slightly in the pot before adding water for a nutty flavor",
+      "Massage any kale or raw greens with olive oil to soften the texture"
+    ]
   },
   {
     name: "Spicy Thai Chicken Curry",
@@ -173,19 +181,21 @@ var meals = [
       "1 can (400ml) coconut milk",
       "1 bell pepper, chopped",
       "1 tablespoon fish sauce",
-      "Fresh cilantro for garnish",
+      "Fresh cilantro for garnish"
     ],
     instructions: [
       "Sauté the curry paste in a large pan over medium heat for 1 minute until fragrant.",
       "Gradually pour in the coconut milk, stirring constantly until well combined.",
       "Add the cubed chicken and simmer gently for 10 minutes.",
       "Toss in the chopped bell peppers and fish sauce, cooking for another 5 minutes.",
-      "Garnish with fresh cilantro leaves and serve alongside warm jasmine rice.",
+      "Garnish with fresh cilantro leaves and serve alongside warm jasmine rice."
     ],
     chef: [
       "Shake the coconut milk can thoroughly before opening it",
       "Adjust the spice level by adding more or less curry paste to taste",
-    ],
+      "Add a tablespoon of brown sugar to perfectly balance the heat",
+      "Don't let the coconut milk boil aggressively, just simmer gently"
+    ]
   },
   {
     name: "Chicken Caesar Salad",
@@ -209,18 +219,20 @@ var meals = [
       "1 head of Romaine lettuce, chopped",
       "1/4 cup crunchy croutons",
       "3 tablespoons Caesar dressing",
-      "2 tablespoons shaved Parmesan cheese",
+      "2 tablespoons shaved Parmesan cheese"
     ],
     instructions: [
       "Season chicken breast with salt, pepper, and garlic powder.",
       "Pan-fry the chicken for 4-5 minutes per side until fully cooked, then slice into strips.",
       "In a large bowl, toss the chopped romaine lettuce with the Caesar dressing.",
-      "Top the dressed lettuce with croutons, shaved Parmesan, and the warm sliced chicken.",
+      "Top the dressed lettuce with croutons, shaved Parmesan, and the warm sliced chicken."
     ],
     chef: [
       "Chill the lettuce in ice water for 5 minutes and dry completely for maximum crispness",
       "Add a light squeeze of fresh lemon over the salad right at the end",
-    ],
+      "Grate some fresh garlic into the dressing for an extra restaurant-style kick",
+      "Keep the croutons separate until the absolute last second to stay crunchy"
+    ]
   },
   {
     name: "Crispy Potato Samosas",
@@ -245,19 +257,21 @@ var meals = [
       "1/2 cup green peas",
       "1 teaspoon cumin and coriander powder",
       "1/2 teaspoon chili powder",
-      "Oil for deep frying",
+      "Oil for deep frying"
     ],
     instructions: [
       "In a bowl, mix the mashed potatoes, peas, cumin, coriander, and chili powder together.",
       "Fold a pastry sheet into a cone shape, fill it with the potato mixture, and seal the edges with a flour-water paste.",
       "Repeat the process for all remaining pastry sheets.",
       "Heat oil in a deep pan and fry the samosas until they turn perfectly golden brown and crispy.",
-      "Drain on paper towels and serve hot with mint chutney.",
+      "Drain on paper towels and serve hot with mint chutney."
     ],
     chef: [
       "Ensure the oil is hot enough before frying so the samosas don't absorb excess oil",
       "You can bake them at 200°C for 20 minutes for a healthier alternative",
-    ],
+      "Let the potato filling cool completely before wrapping to avoid soggy pastry",
+      "Fry on medium heat first, then turn it up for the ultimate outer crunch"
+    ]
   },
   {
     name: "Roasted Chicken with Gravy",
@@ -281,18 +295,20 @@ var meals = [
       "2 tablespoons melted butter",
       "1 teaspoon onion powder and paprika",
       "1 cup chicken stock",
-      "1 tablespoon flour (for the gravy)",
+      "1 tablespoon flour (for the gravy)"
     ],
     instructions: [
       "Preheat your oven to 200°C.",
       "Brush chicken pieces with melted butter, then season with onion powder, paprika, salt, and pepper.",
       "Roast in the oven for 40-45 minutes until the skin is crispy and the chicken is fully cooked.",
-      "To make the gravy: Mix chicken stock with flour and pan drippings in a small pot, simmer until thick.",
+      "To make the gravy: Mix chicken stock with flour and pan drippings in a small pot, simmer until thick."
     ],
     chef: [
       "Let the chicken rest for 5 minutes after baking before slicing to retain its juices",
       "Serve alongside mashed potatoes to complement the delicious gravy sauce",
-    ],
+      "Pat the chicken skin completely dry with paper towels for maximum crispiness",
+      "Strain the gravy through a fine mesh sieve for a smooth, lump-free texture"
+    ]
   },
   {
     name: "Fettuccine Alfredo Pasta",
@@ -317,29 +333,31 @@ var meals = [
       "1 cup freshly grated Parmesan cheese",
       "3 cloves garlic, minced",
       "2 tablespoons butter",
-      "Salt and black pepper to taste",
+      "Salt and black pepper to taste"
     ],
     instructions: [
       "Boil the fettuccine pasta in salted water until al dente, then drain.",
       "Melt butter in a large pan over medium heat and sauté minced garlic for 30 seconds.",
       "Pour in the heavy cream and bring to a gentle simmer.",
       "Turn off the heat, stir in the grated Parmesan cheese until completely melted and smooth.",
-      "Toss the pasta directly into the cream sauce, coat well, and season with black pepper.",
+      "Toss the pasta directly into the cream sauce, coat well, and season with black pepper."
     ],
     chef: [
       "Keep a cup of pasta water to adjust and thin the sauce consistency if needed",
       "Freshly grated Parmesan cheese creates a much smoother texture than pre-packaged options",
-    ],
+      "Never add oil to your pasta boiling water, it prevents the sauce from coating it",
+      "Serve in warm bowls to keep the creamy Alfredo sauce from cooling and seizing up"
+    ]
   },
   {
-    name: "Margherita Pizza",
+    name: "Classic Baked Lasagna",
     rate: 4.8,
     reviews: 430,
     prepTime: 30,
     cookTime: 40,
     servings: "6 people",
     image: "images/food10.jpg",
-    desc: "Classic pizza topped with tomato sauce, mozzarella cheese, and fresh basil",
+    desc: "Layers of pasta, rich minced meat sauce, and creamy béchamel topped with cheese",
     level: "Hard",
     type: "Pasta",
     calories: "680 kcal",
@@ -353,20 +371,22 @@ var meals = [
       "400g minced beef, cooked in tomato sauce",
       "2 cups béchamel sauce",
       "2 cups shredded mozzarella cheese",
-      "1/4 cup grated Parmesan cheese",
+      "1/4 cup grated Parmesan cheese"
     ],
     instructions: [
       "Preheat the oven to 180°C.",
       "In a baking dish, spread a thin layer of meat sauce, then place 3 lasagna sheets on top.",
       "Layer with meat sauce, creamy béchamel sauce, and a handful of mozzarella cheese.",
       "Repeat the layering process two more times, finishing with a generous layer of mozzarella and Parmesan on top.",
-      "Bake in the oven for 35-40 minutes until the cheese is beautifully golden and bubbling.",
+      "Bake in the oven for 35-40 minutes until the cheese is beautifully golden and bubbling."
     ],
     chef: [
       "Let the lasagna rest for 15 minutes after baking so it cuts into perfect clean slices",
       "Cover with foil for the first 20 minutes of baking to prevent the top cheese from burning",
-    ],
-  },
+      "Let the meat sauce simmer slowly for at least 30 minutes to develop a deep flavor",
+      "Make the béchamel sauce slightly loose as the pasta sheets absorb liquid while baking"
+    ]
+  }
 ];
 
 function displayMeal(meal) {
