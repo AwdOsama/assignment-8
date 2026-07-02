@@ -69,6 +69,7 @@ border-radius: 20px;
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
   object-fit: cover !important;
+
 }
 .top-badge-img {
   top: 30px;
@@ -89,6 +90,7 @@ border-radius: 20px;
   overflow-x: hidden;
   height: 670px;
 }
+
 .bg-green {
   background-color: #dbfce7;
 }

@@ -413,7 +413,7 @@ function displayMeal(meal) {
     cartonaIngrad += `
       <li>
         <div class="d-flex gap-3">
-          <span class="navs-icon-1 d-flex align-items-center justify-content-center bg-navs-icon rounded-circle text-white fw-semibold" style="width: 25px; height: 25px">
+          <span class="navs-icon-1 d-flex align-items-center justify-content-center bg-navs-icon rounded-circle text-white fw-semibold flex-shrink-0" style="width: 25px; height: 25px">
             ${i + 1}
           </span>
           <p>${meal.ingredients[i]}</p>
