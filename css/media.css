@@ -9,6 +9,12 @@
     border-top-right-radius: 18px !important;
     border-bottom-right-radius: 0px !important;
   }
+    .right-side {
+    padding: 40px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: auto;
+  }
 }
 @media (max-width: 768px) {
   .left-side img {
@@ -33,10 +39,5 @@
   .custom-tabs .nav-link i {
     font-size: 16px;
   }
-  .right-side {
-    padding: 40px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: auto;
-  }
+
 }
