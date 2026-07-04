@@ -389,10 +389,13 @@ var meals = [
   }
 ];
 
-function displayMeal(meal) {
+var lastIndex = -1;
+
+function displayMeal(index) {
+  var meal = meals[index];
+
   document.getElementById("rate").innerText = meal.rate;
   document.getElementById("review").innerText = `(${meal.reviews} reviews)`;
-
   document.getElementById("prep-time").innerText = meal.prepTime + " min";
   document.getElementById("cook-time").innerText = meal.cookTime + " min";
   document.getElementById("servings").innerText = meal.servings;
@@ -409,25 +412,30 @@ function displayMeal(meal) {
   document.getElementById("sodium").innerHTML = meal.sodium;
 
   var cartonaIngrad = "";
+
   for (var i = 0; i < meal.ingredients.length; i++) {
     cartonaIngrad += `
       <li>
         <div class="d-flex gap-3">
-          <span class="navs-icon-1 d-flex align-items-center justify-content-center bg-navs-icon rounded-circle text-white fw-semibold flex-shrink-0" style="width: 25px; height: 25px">
+          <span class="navs-icon-1 d-flex align-items-center justify-content-center bg-navs-icon rounded-circle text-white fw-semibold flex-shrink-0"
+            style="width:25px;height:25px">
             ${i + 1}
           </span>
           <p>${meal.ingredients[i]}</p>
         </div>
       </li>`;
   }
+
   document.getElementById("ingredients-list").innerHTML = cartonaIngrad;
 
   var cartonaInstructions = "";
+
   for (var i = 0; i < meal.instructions.length; i++) {
     cartonaInstructions += `
       <li>
         <div class="d-flex gap-3 align-items-center">
-          <span class="navs-icon-1 d-flex align-items-center justify-content-center flex-shrink-0 bg-navs-icon rounded-4 text-white fw-bold fs-6" style="width: 50px; height: 50px">
+          <span class="navs-icon-1 d-flex align-items-center justify-content-center flex-shrink-0 bg-navs-icon rounded-4 text-white fw-bold fs-6"
+            style="width:50px;height:50px">
             ${i + 1}
           </span>
           <p class="pra4 mb-0">
@@ -436,16 +444,23 @@ function displayMeal(meal) {
         </div>
       </li>`;
   }
-  document.getElementById("instructions-list").innerHTML = cartonaInstructions;
+
+  document.getElementById("instructions-list").innerHTML =
+    cartonaInstructions;
+
   var cartonachef = "";
+
   for (var i = 0; i < meal.chef.length; i++) {
-    cartonachef += ` <div class="chef-card p-3 d-flex gap-3 align-items-center rounded-3">
-                        <div class="chef-icon d-flex align-items-center justify-content-center rounded-circle" style="width: 20px; height: 20px">
-                          <i class="fa-solid fa-check text-white fs-6"></i>
-                        </div>
-                        <p class="mb-0 pra4" id="chef-pra">${meal.chef[i]}</p>
-                      </div>`;
+    cartonachef += `
+      <div class="chef-card p-3 d-flex gap-3 align-items-center rounded-3">
+        <div class="chef-icon d-flex align-items-center justify-content-center rounded-circle"
+          style="width:20px;height:20px">
+          <i class="fa-solid fa-check text-white fs-6"></i>
+        </div>
+        <p class="mb-0 pra4">${meal.chef[i]}</p>
+      </div>`;
   }
+
   document.getElementById("chef-tips-list").innerHTML = cartonachef;
 }
 
@@ -459,11 +474,21 @@ function checkTime(prepTime, cookTime) {
   }
 }
 
-function getRandomRecipe() {
-  var randomIndex = Math.floor(Math.random() * meals.length);
-  var randomMeal = meals[randomIndex];
+function generateMeal() {
+  var randomMealIndex = Math.floor(Math.random() * meals.length);
 
-  checkTime(randomMeal.prepTime, randomMeal.cookTime);
-  displayMeal(randomMeal);
+  while (randomMealIndex === lastIndex) {
+    randomMealIndex = Math.floor(Math.random() * meals.length);
+  }
+
+  lastIndex = randomMealIndex;
+
+  checkTime(
+    meals[randomMealIndex].prepTime,
+    meals[randomMealIndex].cookTime
+  );
+
+  displayMeal(randomMealIndex);
 }
-getRandomRecipe();
+
+generateMeal();
